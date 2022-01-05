@@ -12,21 +12,24 @@ O(2^n) Exponential - recursive algorithms that solves a problem of size N
 
 O(n!) Factorial - you are adding a loop for every element
 
-Iterating through half a collection is still O(n)
-
-Two separate collections: O(a * b)
-
 Rule 1: Always worst Case
+eg. when looking for an element in an array - presume it is in the last position
+[x, a, b, c, d] => O(1) => O(n)
+[a, b, x, c, d] => O(3) => O(n)
+[a, b, c, d, x] => O(5) => O(n)
 
 Rule 2: Remove Constants
+eg. O(2n + 500) => O(n)
+eg. O(n/2) => O(n)
+Iterating through half a collection
+Graphically they are still linear
 
-Rule 3:
-
-Different inputs should have different variables: O(a + b).
-A and B arrays nested would be: O(a * b)
-
-+ for steps in order
-
-* for nested steps
+Rule 3: Different inputs should have different variables
+O(a + b) for steps in order +
+O(a * b) for nested steps *
 
 Rule 4: Drop Non-dominant terms
+eg. O(10n + n^2 + 1000 + n/2) => O(n^2)
+In terms of scalability, as n gets bigger, n^2 will hold the most weight
+n = 6 => O(60 + 36 + 1000 + 3)
+n = 100 => O(100 + 10000 + 1000 + 50)
