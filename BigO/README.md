@@ -33,3 +33,11 @@ eg. O(10n + n^2 + 1000 + n/2) => O(n^2)
 In terms of scalability, as n gets bigger, n^2 will hold the most weight
 n = 6 => O(60 + 36 + 1000 + 3)
 n = 100 => O(100 + 10000 + 1000 + 50)
+
+Space Complexity:
+Variables
+Data Structures
+Function Calls
+Allocations
+
+https://www.bigocheatsheet.com/
