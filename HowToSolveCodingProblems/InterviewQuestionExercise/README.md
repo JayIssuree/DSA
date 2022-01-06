@@ -20,8 +20,8 @@ should return true
 
 ## Thought Process
 
-- Brute force solution would to do a nested loop and compare all elements of one array to all elements of the other array => O(a^b)
-- The average & worst case scenarios of array search(element) is O(n), so looping through one array and searching for each element in the other would also result in => O(a^b)
+- Brute force solution would to do a nested loop and compare all elements of one array to all elements of the other array => O(a*b)
+- The average & worst case scenarios of array search(element) is O(n), so looping through one array and searching for each element in the other would also result in => O(a*b)
 - Iterating through one array THEN the other would result in O(a+b)
 - Hash lookup is on average O(1)
 - Hashset will not contain duplicates => when converting the first array to a hashset it will not return true if there are duplicates within the same array
