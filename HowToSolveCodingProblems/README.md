@@ -49,6 +49,8 @@ etc.. What is the main goal?
 
 And always remember: Communicate your thought process as much as possible. Don’t worry about finishing it fast. Every part of the interview matters.
 
+## Resources:
+
 - How to ace the interview: https://coggle.it/diagram/W5u8QkZs6r4sZM3J/t/master-the-interview
 - Course outline: https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link/c25f98c73a03f5b1107cd0e2f4bce29c9d78e31655e55cb0b785d56f0036c9d1
 - Example google interview: https://www.youtube.com/watch?v=XKu_SEDAykw
