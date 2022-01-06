@@ -41,12 +41,12 @@
 - n = 6 => O(60 + 36 + 1000 + 3)
 - n = 100 => O(100 + 10000 + 1000 + 50)
 
-### Space Complexity:
+### Space Complexity
 - Variables
 - Data Structures
 - Function Calls
 - Allocations
 
-## Resources:
+## Resources
 
 https://www.bigocheatsheet.com/
