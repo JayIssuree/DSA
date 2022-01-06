@@ -15,13 +15,17 @@ returns true
 ```
 
 ## Questions
+
 - Array will always contain integers?
 - Waht about negative numbers, floats etc?
 - Do massive arrays fit in memory?
 
 ## Thought Process
+
 - Brute force solution would be to do a nested loop and add every element of the array with every other element to see if they equal the sum => O(n^2)
 - Iterating through the array once would result in => O(n)
 - Hash lookup is on average O(1)
 
 ## Resources
+- https://www.javatpoint.com/java-hashset
+- https://www.tutorialspoint.com/difference-between-an-integer-and-int-in-java
