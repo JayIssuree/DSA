@@ -1,7 +1,7 @@
 ## Exercise
 
 - Given a collection of numbers and a sum value, return whether or not a pair of numbers in the collection adds up to the sum
-- Assume that the array will not be sorted
+- Assume that the array will not be ordered
 - Cannot use an element at the same index twice
 - The same number may appear more than once at a different index
 
@@ -17,7 +17,7 @@ returns true
 ## Questions
 
 - Array will always contain integers?
-- Waht about negative numbers, floats etc?
+- What about negative numbers, floats etc?
 - Do massive arrays fit in memory?
 
 ## Thought Process
