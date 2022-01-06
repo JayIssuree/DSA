@@ -1,9 +1,9 @@
-## The 3 pillars of good code:
+## The 3 pillars of good code
 1. Readable
 2. Time Complexity
 3. Space Complexity
 
-## What skills interviewer is looking for:
+## What skills interviewer is looking for
 Analytic Skills - How can you think through problems and analyze things?
 
 Coding Skills - Do you code well, by writing clean, simple, organized, readable code?
@@ -12,7 +12,7 @@ Technical knowledge - Do you know the fundamentals of the job you're applying fo
 
 Communication Skills - Does your personality match the companies’ culture?
 
-## Step By Step through a problem:
+## Step By Step through a problem
 1. When the interviewer says the question, write down the key points at the top (i.e. sorted array). Make sure you have all the details. Show how organized you are.
 2. Make sure you double check: What are the inputs? What are the outputs?
 3. What is the most important value of the problem? Do you have time, and space and memory,
@@ -30,7 +30,7 @@ etc.. What is the main goal?
 14. Finally talk to the interviewer where you would improve the code. Does it work? Are there different approaches? Is it readable? What would you google to improve? How can performance be improved? Possibly: Ask the interviewer what was the most interesting solution you have seen to this problem
 15. If your interviewer is happy with the solution, the interview usually ends here. It is also common that the interviewer asks you extension questions, such as how you would handle the problem if the whole input is too large to fit into memory, or if the input arrives as a stream. This is a common follow-up question at Google, where they care a lot about scale. The answer is usually a divide-and-conquer approach — perform distributed processing of the data and only read certain chunks of the input from disk into memory, write the output back to disk and combine them later.
  
-## Good code checklist:
+## Good code checklist
 - It works
 - Good use of data structures
 - Code Re-use/ Do Not Repeat Yourself
@@ -38,7 +38,7 @@ etc.. What is the main goal?
 - Less than O(N^2). We want to avoid nested loops if we can since they are expensive. Two separate loops are better than 2 nested loops
 - Low Space Complexity --> Recursion can cause stack overflow, copying of large arrays may exceed memory of machine
 
-## Heurestics to ace the question:
+## Heurestics to ace the question
 - Hash Maps are usually the answer to improve Time Complexity
 - If it's a sorted array, use Binary tree to achieve O(log N). Divide and Conquer - Divide a data set into smaller chunks and then repeating a process with a subset of data. Binary search is a great example of this
 - Try Sorting your input
@@ -49,7 +49,7 @@ etc.. What is the main goal?
 
 And always remember: Communicate your thought process as much as possible. Don’t worry about finishing it fast. Every part of the interview matters.
 
-## Resources:
+## Resources
 
 - How to ace the interview: https://coggle.it/diagram/W5u8QkZs6r4sZM3J/t/master-the-interview
 - Course outline: https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link/c25f98c73a03f5b1107cd0e2f4bce29c9d78e31655e55cb0b785d56f0036c9d1
