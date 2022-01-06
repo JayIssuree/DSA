@@ -12,7 +12,7 @@ array2 = ["z", "y", "x"]
 should return true
 ```
 
-## Questions:
+## Questions
 
 - Are the contents of the arrays always Strings?
 - What about duplicates in the same array?
@@ -25,3 +25,9 @@ should return true
 - Iterating through one array THEN the other would result in O(a+b)
 - Hash lookup is on average O(1)
 - Hashset will not contain duplicates => when converting the first array to a hashset it will not return true if there are duplicates within the same array
+
+## Resources
+
+- https://www.bigocheatsheet.com/
+- https://www.geeksforgeeks.org/difference-between-hashmap-and-hashset/
+- https://www.javatpoint.com/java-hashset
