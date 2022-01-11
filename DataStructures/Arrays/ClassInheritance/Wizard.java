@@ -4,7 +4,7 @@ public class Wizard extends Player{
         super(name, type);
     };
 
-    public void play(){
+    void play(){
         System.out.println("I'm a wizard casting a spell");
     };
 
