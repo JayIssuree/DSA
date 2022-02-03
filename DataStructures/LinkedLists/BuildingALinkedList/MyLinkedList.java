@@ -45,4 +45,12 @@ class MyLinkedList {
         this.length++;
     };
 
+    void printAllValues(){
+        Node temp = this.getHead();
+        for(int i = 0; i < this.getLength(); i++){
+            System.out.println(temp.getValue());
+            temp = temp.getNext();
+        };
+    };
+
 };

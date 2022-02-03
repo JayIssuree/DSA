@@ -4,8 +4,7 @@ class Main {
         MyLinkedList linkedList = new MyLinkedList(5);
         linkedList.append(16);
         linkedList.prepend(10);
-        System.out.println(linkedList.getHead().getValue());
-        System.out.println(linkedList.getTail().getValue());
+        linkedList.printAllValues();
         System.out.println(linkedList.getLength());
     };
 
