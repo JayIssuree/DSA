@@ -6,8 +6,8 @@ class MyLinkedList {
 
     MyLinkedList(Object value){
         Node firstNode = new Node(value);
-        this.assignHead(firstNode);
-        this.assignTail(firstNode);
+        this.setHead(firstNode);
+        this.setTail(firstNode);
         this.length = 1;
     };
 
@@ -23,33 +23,46 @@ class MyLinkedList {
         return this.length;
     };
 
-    void assignHead(Node head){
+    void setHead(Node head){
         this.head = head;
     };
 
-    void assignTail(Node tail){
+    void setTail(Node tail){
         this.tail = tail;
     };
 
     void append(Object value){
         Node appendedNode = new Node(value);
-        this.getTail().assignNext(appendedNode);
-        this.assignTail(appendedNode);
+        this.getTail().setNext(appendedNode);
+        this.setTail(appendedNode);
         this.length++;
     };
 
     void prepend(Object value){
         Node prependedNode = new Node(value);
-        prependedNode.assignNext(this.head);
-        this.assignHead(prependedNode);
+        prependedNode.setNext(this.head);
+        this.setHead(prependedNode);
         this.length++;
     };
 
+    void insert(Integer index, Object value){
+        if(index == 0){
+            this.prepend(value);
+        } else {
+            Node currentNode = this.getHead();
+            for(int i = 1; i < index; i++){
+                currentNode = currentNode.getNext();
+            };
+            currentNode.setNext(new Node(value, currentNode.getNext()));
+            this.length++;
+        };
+    };
+
     void printAllValues(){
-        Node temp = this.getHead();
+        Node currentNode = this.getHead();
         for(int i = 0; i < this.getLength(); i++){
-            System.out.println(temp.getValue());
-            temp = temp.getNext();
+            System.out.println(currentNode.getValue());
+            currentNode = currentNode.getNext();
         };
     };
 

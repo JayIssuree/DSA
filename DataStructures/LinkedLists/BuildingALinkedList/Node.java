@@ -17,7 +17,7 @@ class Node {
         return this.next;
     };
 
-    void assignNext(Node nextNode){
+    void setNext(Node nextNode){
         this.next = nextNode;
     };
 
