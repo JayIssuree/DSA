@@ -32,10 +32,19 @@ class MyDoublyLinkedList {
         return this.length;
     };
 
+    void append(Object value){
+        Node appendedNode = new Node(value);
+        appendedNode.setPrevious(this.getTail());
+        this.getTail().setNext(appendedNode);
+        this.setTail(appendedNode);
+        this.length++;
+    };
+
     void printAllValues(){
         Node currentNode = this.getHead();
         for(int i = 0; i < this.getLength(); i++){
             System.out.println(currentNode.getValue());
+            currentNode = currentNode.getNext();
         };
     };
 
