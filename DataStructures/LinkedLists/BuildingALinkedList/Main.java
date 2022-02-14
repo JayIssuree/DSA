@@ -10,6 +10,7 @@ class Main {
         linkedList.insert(5, "Hello");
         linkedList.remove(-99);
         linkedList.remove(99);
+        linkedList.remove(2);
         linkedList.printAllValues();
     };
 
