@@ -45,15 +45,22 @@ class MyLinkedList {
         this.length++;
     };
 
+    Node traverseToIndex(Integer index){
+        Node currentNode = this.getHead();
+        for(int i = 0; i < index; i++){
+            currentNode = currentNode.getNext();
+        };
+        return currentNode;
+    };
+
     void insert(Integer index, Object value){
-        if(index == 0){
+        if(index <= 0){
             this.prepend(value);
+        } else if(index >= this.getLength()){
+            this.append(value);
         } else {
-            Node currentNode = this.getHead();
-            for(int i = 1; i < index; i++){
-                currentNode = currentNode.getNext();
-            };
-            currentNode.setNext(new Node(value, currentNode.getNext()));
+            Node leadingNode = this.traverseToIndex(index - 1);
+            leadingNode.setNext(new Node(value, leadingNode.getNext()));
             this.length++;
         };
     };
