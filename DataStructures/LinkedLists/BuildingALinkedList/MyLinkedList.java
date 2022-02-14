@@ -65,6 +65,22 @@ class MyLinkedList {
         };
     };
 
+    void remove(Integer index){
+        if(index <= 0){
+            this.setHead(this.getHead().getNext());
+            this.length--;
+        } else if(index >= this.getLength()){
+            Node leadingNode = this.traverseToIndex(this.getLength() - 1);
+            leadingNode.setNext(null);
+            this.setTail(leadingNode);
+            this.length--;
+        } else {
+            Node leadingNode = this.traverseToIndex(index - 1);
+            leadingNode.setNext(leadingNode.getNext().getNext());
+            this.length--;
+        };
+    };
+
     void printAllValues(){
         Node currentNode = this.getHead();
         for(int i = 0; i < this.getLength(); i++){
