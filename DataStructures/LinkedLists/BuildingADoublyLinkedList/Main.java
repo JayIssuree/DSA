@@ -7,8 +7,8 @@ class Main {
         doublyLinkedList.prepend(99);
         doublyLinkedList.prepend(100);
         doublyLinkedList.insert(2, "Inserted at index 2");
+        doublyLinkedList.remove(3);
         doublyLinkedList.printAllValues();
-        doublyLinkedList.printAllValuesReversed();
     };
 
 };

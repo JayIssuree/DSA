@@ -17,6 +17,7 @@ class MyDoublyLinkedList {
 
     void setHead(Node headNode){
         this.head = headNode;
+        headNode.setPrevious(null);
     };
 
     Node getTail(){
@@ -69,6 +70,20 @@ class MyDoublyLinkedList {
             trailingNode.setPrevious(insertedNode);
             this.length++;
         };
+    };
+
+    void remove(Integer index){
+        if(index <= 0){
+            this.setHead(this.getHead().getNext());
+        } else if(index >= this.getLength()){
+            this.setTail(this.getTail().getPrevious());
+        } else {
+            Node leadingNode = this.traverseToIndex(index - 1);
+            Node trailingNode = leadingNode.getNext().getNext();
+            leadingNode.setNext(trailingNode);
+            trailingNode.setPrevious(leadingNode);
+        };
+        this.length--;
     };
 
     void printAllValues(){
