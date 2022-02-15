@@ -6,7 +6,9 @@ class Main {
         doublyLinkedList.append(3);
         doublyLinkedList.prepend(99);
         doublyLinkedList.prepend(100);
+        doublyLinkedList.insert(2, "Inserted at index 2");
         doublyLinkedList.printAllValues();
+        doublyLinkedList.printAllValuesReversed();
     };
 
 };

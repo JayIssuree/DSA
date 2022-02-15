@@ -48,11 +48,42 @@ class MyDoublyLinkedList {
         this.length++;
     };
 
+    Node traverseToIndex(Integer index){
+        Node currentNode = this.getHead();
+        for(int i = 0; i < index; i++){
+            currentNode = currentNode.getNext();
+        };
+        return currentNode;
+    };
+
+    void insert(Integer index, Object value){
+        if(index <= 0){
+            this.prepend(value);
+        } else if(index >= this.getLength()){
+            this.append(value);
+        } else {
+            Node leadingNode = this.traverseToIndex(index - 1);
+            Node trailingNode = leadingNode.getNext();
+            Node insertedNode = new Node(value, leadingNode, trailingNode);
+            leadingNode.setNext(insertedNode);
+            trailingNode.setPrevious(insertedNode);
+            this.length++;
+        };
+    };
+
     void printAllValues(){
         Node currentNode = this.getHead();
         for(int i = 0; i < this.getLength(); i++){
             System.out.println(currentNode.getValue());
             currentNode = currentNode.getNext();
+        };
+    };
+
+    void printAllValuesReversed(){
+        Node currentNode = this.getTail();
+        for(int i = 0; i < this.getLength(); i++){
+            System.out.println(currentNode.getValue());
+            currentNode = currentNode.getPrevious();
         };
     };
 
