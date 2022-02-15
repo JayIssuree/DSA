@@ -32,6 +32,14 @@ class MyDoublyLinkedList {
         return this.length;
     };
 
+    void prepend(Object value){
+        Node prependedNode = new Node(value);
+        this.getHead().setPrevious(prependedNode);
+        prependedNode.setNext(this.getHead());
+        this.setHead(prependedNode);
+        this.length++;
+    };
+
     void append(Object value){
         Node appendedNode = new Node(value);
         appendedNode.setPrevious(this.getTail());

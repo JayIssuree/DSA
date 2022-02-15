@@ -4,6 +4,8 @@ class Main {
         MyDoublyLinkedList doublyLinkedList = new MyDoublyLinkedList("Hello World!");
         doublyLinkedList.append(2);
         doublyLinkedList.append(3);
+        doublyLinkedList.prepend(99);
+        doublyLinkedList.prepend(100);
         doublyLinkedList.printAllValues();
     };
 
