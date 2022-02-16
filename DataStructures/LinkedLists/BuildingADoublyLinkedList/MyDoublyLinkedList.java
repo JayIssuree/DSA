@@ -88,7 +88,7 @@ class MyDoublyLinkedList {
 
     void printAllValues(){
         Node currentNode = this.getHead();
-        for(int i = 0; i < this.getLength(); i++){
+        for(int i = 0; i <= this.getLength(); i++){
             System.out.println(currentNode.getValue());
             currentNode = currentNode.getNext();
         };
@@ -96,7 +96,7 @@ class MyDoublyLinkedList {
 
     void printAllValuesReversed(){
         Node currentNode = this.getTail();
-        for(int i = 0; i < this.getLength(); i++){
+        for(int i = 0; i <= this.getLength(); i++){
             System.out.println(currentNode.getValue());
             currentNode = currentNode.getPrevious();
         };

@@ -81,9 +81,23 @@ class MyLinkedList {
 
     void printAllValues(){
         Node currentNode = this.getHead();
-        for(int i = 0; i < this.getLength(); i++){
+        for(int i = 0; i <= this.getLength(); i++){
             System.out.println(currentNode.getValue());
             currentNode = currentNode.getNext();
+        };
+    };
+
+    void reverse(){
+        Node leadingNode = null;
+        Node currentNode = this.getHead();
+        Node trailingNode = this.getHead();
+        this.head = this.tail;
+        this.tail = currentNode;
+        while(currentNode != null){
+            trailingNode = currentNode.getNext();
+            currentNode.setNext(leadingNode);
+            leadingNode = currentNode;
+            currentNode = trailingNode;
         };
     };
 

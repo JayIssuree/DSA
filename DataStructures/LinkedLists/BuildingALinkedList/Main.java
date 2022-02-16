@@ -11,6 +11,9 @@ class Main {
         linkedList.remove(-99);
         linkedList.remove(99);
         linkedList.remove(2);
+        linkedList.insert(2, "insert at index 2");
+        linkedList.printAllValues();
+        linkedList.reverse();
         linkedList.printAllValues();
     };
 
