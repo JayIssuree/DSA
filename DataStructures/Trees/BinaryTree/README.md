@@ -33,3 +33,8 @@
     log2 16 = 4
 
 O(log n) where n is the height of the tree/max number of steps to find a node
+
+# Automatic Balancing of Trees
+- AVL
+- Red Black
+- These 2 types of binary search tree automatically balance themselves
