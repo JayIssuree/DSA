@@ -40,4 +40,15 @@ class MyBinarySearchTree {
         return currentNode;
     };
 
+    Node traverse(Node currentNode, Integer value){
+        if(currentNode.getValue() == value){
+            return currentNode;
+        } else if(value > currentNode.getValue()){
+            return traverse(currentNode.getRight(), value);
+        } else if(value < currentNode.getValue()){
+            return traverse(currentNode.getLeft(), value);
+        };
+        return traverse(currentNode, value);
+    };
+
 };

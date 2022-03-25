@@ -13,6 +13,7 @@ class Main {
         System.out.println(bst.lookup(20).getValue());
         System.out.println(bst.lookup(20).getLeft().getValue());
         System.out.println(bst.lookup(20).getRight().getValue());
+        System.out.println(bst.traverse(bst.lookup(20), 8).getValue());
     };
 
 }
