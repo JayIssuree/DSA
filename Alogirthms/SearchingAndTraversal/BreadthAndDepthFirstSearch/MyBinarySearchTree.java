@@ -90,4 +90,37 @@ class MyBinarySearchTree {
         return breadthFirstSearchR(list, queue);
     };
 
+    List<Integer> depthFirstSearchInOrder(List<Integer> list, Node currentNode){
+        if(currentNode.getLeft() != null){
+            depthFirstSearchInOrder(list, currentNode.getLeft());
+        };
+        list.add(currentNode.getValue());
+        if(currentNode.getRight() != null){
+            depthFirstSearchInOrder(list, currentNode.getRight());
+        };
+        return list;
+    };
+
+    List<Integer> depthFirstSearchPreOrder(List<Integer> list, Node currentNode){
+        list.add(currentNode.getValue());
+        if(currentNode.getLeft() != null){
+            depthFirstSearchPreOrder(list, currentNode.getLeft());
+        };
+        if(currentNode.getRight() != null){
+            depthFirstSearchPreOrder(list, currentNode.getRight());
+        };
+        return list;
+    };
+
+    List<Integer> depthFirstSearchPostOrder(List<Integer> list, Node currentNode){
+        if(currentNode.getLeft() != null){
+            depthFirstSearchPostOrder(list, currentNode.getLeft());
+        };
+        if(currentNode.getRight() != null){
+            depthFirstSearchPostOrder(list, currentNode.getRight());
+        };
+        list.add(currentNode.getValue());
+        return list;
+    };
+
 };

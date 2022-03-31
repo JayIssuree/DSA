@@ -42,8 +42,9 @@
 
 ## Depth First Search
 - Go to the deepest level, branch by branch, until all the children have been explored
-- The example tree would look like => [9, 6, 1, 4, 12, 34, 45]
-- Tree Level:                          1  2  3      2   3
+- The example tree would look like => [1, 6, 4, 9, 34, 12, 45] => InOrder
+- The example tree would look like => [9, 6, 1, 4, 12, 34, 45] => PreOrder
+- The example tree would look like => [1, 4, 6, 34, 45, 12, 9] => PostOrder
 
 - Time complexity => O(n)
 - Can get slow if the tree/graph is extremely large
