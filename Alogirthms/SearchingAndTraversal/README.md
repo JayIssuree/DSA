@@ -37,7 +37,7 @@
 - Time complexity => O(n)
 - Finds the shortest path (always search the closest nodes to the root node first)
 - Requires MORE MEMORY
-- Has to keep track of the nodes at the current level
+- Has to keep track of the nodes at the current level in a QUEUE
 - Good if you know the target is in the upper levels of a tree/graph
 
 ## Depth First Search

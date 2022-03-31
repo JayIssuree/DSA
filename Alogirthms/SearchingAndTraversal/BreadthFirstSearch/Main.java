@@ -1,3 +1,8 @@
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
+
+
 class Main {
 
     public static void main(String[] args){
@@ -10,7 +15,13 @@ class Main {
         bst.insert(8);
         bst.insert(21);
 
-        bst.breadthFirstSearch();
+        System.out.println(bst.breadthFirstSearch());
+
+        List<Integer> initialList = new ArrayList<Integer>();
+        List<Node> initialQueue = new ArrayList<Node>();
+        initialQueue.add(bst.lookup(20));
+
+        System.out.println(bst.breadthFirstSearchR(initialList, initialQueue));
     };
 
 }

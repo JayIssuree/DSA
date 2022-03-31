@@ -75,4 +75,19 @@ class MyBinarySearchTree {
         return list;
     };
 
+    List<Integer> breadthFirstSearchR(List<Integer> list, List<Node> queue){
+        if(queue.size() == 0){
+            return list;
+        };
+        Node currentNode = queue.remove(0);
+        list.add(currentNode.getValue());
+        if(currentNode.getLeft() != null){
+            queue.add(currentNode.getLeft());
+        };
+        if(currentNode.getRight() != null){
+            queue.add(currentNode.getRight());
+        };
+        return breadthFirstSearchR(list, queue);
+    };
+
 };
