@@ -36,6 +36,7 @@
 
 - Time complexity => O(n)
 - Finds the shortest path (always search the closest nodes to the root node first)
+- Like google maps/closest facebook friends
 - Requires MORE MEMORY
 - Has to keep track of the nodes at the current level in a QUEUE
 - Good if you know the target is in the upper levels of a tree/graph
@@ -48,6 +49,7 @@
 
 - Time complexity => O(n)
 - Can get slow if the tree/graph is extremely large
+- Like solving a maze
 - Requires LESS MEMORY
 - Good if you know the target is in the lower levels of a tree/graph
 - Can determine if a path exists between 2 nodes
@@ -60,3 +62,12 @@
 - If the tree is very wide => Depth First Search (BFS will need too much memory)
 - If solutions are frequent but located deep in the tree => Depth First Search
 - Determining whether a path exists between two nodes => Depth First Search
+
+## Graphs
+- Trees are just types of graph so both BFS & DFS can be used on them and for the same reasons
+
+## Dijkstra & Bellman-Ford
+- SHORTEST PATH between 2 nodes on a WEIGHTED GRAPH
+- These take into consideration the WEIGHT of GRAPH EDGES
+  - Weight can correspond to distance/speed etc => Google Maps
+- Bellman => Incorporates NEGATIVE WEIGHTINGS
