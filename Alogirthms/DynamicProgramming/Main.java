@@ -13,6 +13,9 @@ class Main{
         F.printAndResetCount();
         System.out.println(F.calculate(12));
         F.printAndResetCount();
+
+        BottomUpFibonacci BUF = new BottomUpFibonacci();
+        System.out.println(BUF.calculate(12));
     };
 
 };
