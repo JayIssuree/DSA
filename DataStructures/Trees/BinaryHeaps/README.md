@@ -1,13 +1,23 @@
 # Binary Heaps
 - Similar to a binary tree
 - Every parent node an have 2 children nodes
+
 - MAX HEAP => each CHILD NODE must be LESS THAN the PARENT NODE
     - It starts with the maximum value
 - MIN HEAP => each CHILD NODE must be GREATER THAN the PARENT NODE
     - It starts with the minimum value
 
+=> The root node will either be the largest/smallest element
 - There is no relationship between left and right
 - The only relationship is between top to bottom
+
+- You can store a priority queue in an array
+    - Each parents child will be stored at:
+        LEFT: 2n + 1 
+        RIGHT: 2n + 2
+    - To find the parent of an element:
+        (n - 1)/2.floor
+    => Where n is the index in the array
 
 - Commonly used in PRIORITY QUEUES
 - Can be used in any algorithm where ORDERING is important
